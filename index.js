@@ -1,6 +1,4 @@
-var Client = require("./lib/Client"),
-  path = require("path");
 
-var config = require("rc")("nodebotwars", path.resolve(__dirname, ".nodebotwarsrc"));
-
-var server = new Client(config);
+module.exports = require("./lib/Client");
+module.exports.TYPES = require("./lib/TYPES");
+module.exports.SHIELDS = require("./lib/SHIELDS");

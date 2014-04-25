@@ -1,13 +1,15 @@
 {
   "name": "nodebotwars-client",
   "version": "0.0.1",
+  "main": "./index.js",
   "scripts": {
     "test": "istanbul cover _mocha",
     "coveralls": "istanbul cover _mocha && cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "rc": "^0.3",
-    "dnode": "^1.0"
+    "dnode": "^1.0",
+    "check-types": "^1.2"
   },
   "devDependencies": {
     "mocha": "^1.0",
